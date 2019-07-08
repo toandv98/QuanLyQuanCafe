@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0941298A-7D70-463D-A9C6-840318EC52D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLCF</RootNamespace>
+    <AssemblyName>QLCF</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cafe.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\BanDAO.cs" />
+    <Compile Include="DAO\ChiTietHDDAO.cs" />
+    <Compile Include="DAO\DanhMucDAO.cs" />
+    <Compile Include="DAO\HoaDonDAO.cs" />
+    <Compile Include="DAO\MenuDAO.cs" />
+    <Compile Include="DAO\MonDAO.cs" />
+    <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DAO\TaiKhoanDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DTO\Ban.cs" />
+    <Compile Include="DTO\ChiTietHoaDon.cs" />
+    <Compile Include="DTO\DanhMuc.cs" />
+    <Compile Include="DTO\HoaDon.cs" />
+    <Compile Include="DTO\Menu.cs" />
+    <Compile Include="DTO\Mon.cs" />
+    <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="DTO\TaiKhoan.cs" />
+    <Compile Include="fmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDangNhap.Designer.cs">
+      <DependentUpon>fmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmQuanLy.Designer.cs">
+      <DependentUpon>fmQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmThanhToan.Designer.cs">
+      <DependentUpon>fmThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmThongTin.Designer.cs">
+      <DependentUpon>fmThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="fmQuanLyBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmQuanLyBan.Designer.cs">
+      <DependentUpon>fmQuanLyBan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fmDangNhap.resx">
+      <DependentUpon>fmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmQuanLy.resx">
+      <DependentUpon>fmQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmThanhToan.resx">
+      <DependentUpon>fmThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmThongTin.resx">
+      <DependentUpon>fmThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmQuanLyBan.resx">
+      <DependentUpon>fmQuanLyBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anhnen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anhnen1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ktea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man_Black_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Calculator_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_sql_check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1_into.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money_Calculator_481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADDMon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ncc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cafe.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

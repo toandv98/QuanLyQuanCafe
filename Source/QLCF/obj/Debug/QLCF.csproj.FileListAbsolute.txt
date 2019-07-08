@@ -1,0 +1,14 @@
+D:\Visual Studio\QLCF\QLCF\bin\Debug\QLCF.exe.config
+D:\Visual Studio\QLCF\QLCF\bin\Debug\QLCF.exe
+D:\Visual Studio\QLCF\QLCF\bin\Debug\QLCF.pdb
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.csprojAssemblyReference.cache
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.fmDangNhap.resources
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.Properties.Resources.resources
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.csproj.GenerateResource.cache
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.csproj.CoreCompileInputs.cache
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.exe
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.pdb
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.fmQuanLyBan.resources
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.fmThongTin.resources
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.fmQuanLy.resources
+D:\Visual Studio\QLCF\QLCF\obj\Debug\QLCF.fmThanhToan.resources
